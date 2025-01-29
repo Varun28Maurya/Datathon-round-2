@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FundFlow - Startup Social Media</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #d0e8ff, #a0c4ff);
+        }
+
+        /* Header Styling */
+        header {
+            background: linear-gradient(to right, #001f5f, #004aad);
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        .get-started {
+            padding: 12px 24px;
+            background-color: #00a6ff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            box-shadow: 0px 4px 8px rgba(0, 166, 255, 0.4);
+        }
+
+        .get-started:hover {
+            background-color: #0080d4;
+            box-shadow: 0px 6px 12px rgba(0, 128, 212, 0.6);
+            transform: scale(1.05);
+        }
+
+        /* Content Section */
+        .content {
+            padding: 30px;
+            max-width: 1100px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+        }
+
+        .post {
+            background: linear-gradient(to bottom, #f0f8ff, #cce5ff);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 255, 0.2);
+            transition: all 0.3s ease;
+            border-left: 6px solid #007bff;
+        }
+
+        .post:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 6px 12px rgba(0, 0, 255, 0.3);
+        }
+
+        .post img {
+            width: 100%;
+            max-height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .post h3 {
+            font-size: 22px;
+            margin: 15px 0 5px;
+            color: #002b5c;
+        }
+
+        .post p {
+            font-size: 16px;
+            color: #004aad;
+            line-height: 1.5;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(to right, #001f5f, #004aad);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 16px;
+            margin-top: 30px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .get-started {
+                margin-top: 10px;
+            }
+
+            .content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">FundFlow</div>
+    <button class="get-started">Get Started</button>
+</header>
+
+<div class="content">
+    <div class="post">
+        <img src="https://logos-world.net/wp-content/uploads/2020/11/Swiggy-Logo.png" alt="Swiggy">
+        <h3>Swiggy</h3>
+        <p>Aap kaunse chick ho?</p>
+    </div>
+
+
+
+
+    <div class="post">
+        <img src="https://th.bing.com/th/id/R.eadac11b662faa57e4b806263f8e7642?rik=dXbhLg7x49QVbg&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fuber-logo-vector-png-uber-icon-png-50-px-1600.png&ehk=hWY6TYYwZAYpPbHKLid%2f431JJx%2frKI7tiY%2b6i993Y1A%3d&risl=&pid=ImgRaw&r=0" alt="Uber">
+        <h3>Uber</h3>
+        <p>Is this what they mean when they say 'love season is coming?'</p>
+    </div>
+
+    <div class="post">
+        <img src="https://logodownload.org/wp-content/uploads/2016/10/airbnb-logo-0.png" alt="Airbnb">
+        <h3>Airbnb</h3>
+        <p>Airbnb.org partnered with @211lacounty to support those who lost homes due to LA wildfires.</p>
+    </div>
+
+    <div class="post">
+        <img src="https://1.bp.blogspot.com/-sctrLcZw8gk/Xs8_zLy5D4I/AAAAAAABfiw/_nR-0WSdgqYoTDamnGSv07yTGaJbzwS8ACPcBGAYYCw/w1200-h630-p-k-no-nu/Policybazaar-Logo.jpg" alt="Policy Bazaar">
+        <h3>Policy Bazaar</h3>
+        <p>Protect your bike from unforeseen expenses. Compare and buy Motor Insurance today!</p>
+    </div>
+
+    <div class="post">
+        <img src="https://pluspng.com/logo-img/zo143zoo0422-zoom-logo-zoom-scheduler-issues-ongoing.png" alt="Zoom">
+        <h3>Zoom</h3>
+        <p>Celebrating 500+ @g2dotcom Winter Badges for AI Companion and Team Chat features!</p>
+    </div>
+
+    <div class="post">
+        <img src="https://th.bing.com/th/id/R.4e3bc5cdc62b72da32544b56a9528161?rik=JvQmZHQQNJjTow&riu=http%3a%2f%2f2.bp.blogspot.com%2f-e8EX8HXfU_M%2fVWA1tOmIxII%2fAAAAAAAACnM%2fwVEAIqUlnOI%2fs1600%2fSnapchat-logo-vector.png&ehk=UEhahD%2fm2%2fI0iksXRnCE%2fUBP1TUDtMNTxjqQU3mZe%2fU%3d&risl=&pid=ImgRaw&r=0" alt="Snapchat">
+        <h3>Snapchat</h3>
+        <p>Keep your Bitmojis cozy this winter with all-new PJ's and earmuffs!</p>
+    </div>
+
+    <div class="post">
+        <img src="SpaceX.jpg" alt="SpaceX">
+        <h3>SpaceX</h3>
+        <p>The first Starship flight test of 2025 flew with ambitious goals.</p>
+    </div>
+
+    <div class="post">
+        <img src="https://anchanto.com/wp-content/uploads/2022/08/shadowfax-logo.png" alt="Shadowfax">
+        <h3>Shadowfax</h3>
+        <p>Shadowfax acquires CriticaLog to enhance logistics solutions across multiple sectors.</p>
+    </div>
+
+    <div class="post">
+        <img src="https://www.yourtechstory.com/wp-content/uploads/2020/01/razorpay.png" alt="Razorpay">
+        <h3>Razorpay</h3>
+        <p>Hey @lenskart, we look good together! Razorpay Engage x Lenskart Gift Cards make gifting easier.</p>
+    </div>
+
+    <div class="post">
+        <img src="https://th.bing.com/th/id/OIP.tV5zCryUebaF2cGTHAlLMgHaEK?w=1920&h=1080&rs=1&pid=ImgDetMain" alt="Peloton">
+        <h3>Peloton</h3>
+        <p>A lil' healthy habits check-in</p>
+    </div>
+
+    <div class="post">
+        <img src="https://logodownload.org/wp-content/uploads/2016/10/airbnb-logo-0.png" alt="Airbnb">
+        <h3>Airbnb</h3>
+        <p>"Traditional craft requires a relationship with local materials, not just as supplies-but as plants, trees, and ecosystems. <br><br>
+         Thenookavl is meant to highlight all of the interconnected facets of western North Carolina that are worth celebrating."</p>
+    </div>
+
+    <div class="post">
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.logo.wine%2Flogo%2FSpaceX&psig=AOvVaw0NU7D5wiwCcE37Y0ACEPv3&ust=1738248183889000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKjQu6SVm4sDFQAAAAAdAAAAABAE" alt="SpaceX">
+        <h3>SpaceX</h3>
+        <p>Falcon 9 lifts off from pad 39A in Florida to deliver 21 Starlink satellites to the constellation.</p>
+    </div>
+</div>
+
+<footer>
+    © 2025 FundFlow. All Rights Reserved.
+</footer>
+
+</body>
+</html>
