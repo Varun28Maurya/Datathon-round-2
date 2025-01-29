@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceX Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body class="bg-gray-100 p-6">
+
+    <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+        <!-- Banner and Profile Section -->
+        <div class="relative">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.4HeMVAXSiTlg8ecUTZb8TAHaEK&pid=Api&P=0&h=180" alt="Banner"
+                class="w-full h-40 object-cover">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/SpaceX-Logo.svg" alt="Startup Logo"
+                class="w-24 h-24 rounded-full absolute left-6 bottom-0 transform translate-y-1/2 border-4 border-white shadow-md">
+        </div>
+
+        <!-- Tagline (Moved Below Logo) -->
+        <div class="text-center mt-12 text-gray-700 text-lg font-semibold">
+            🚀 "Pushing the boundaries of space exploration and technology."
+        </div>
+
+        <!-- Content Section -->
+        <div class="p-6">
+            <!-- About & Evaluation -->
+            <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <h2 class="text-xl font-semibold mb-2">About SpaceX</h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        SpaceX, founded in 2002 by Elon Musk, is a private aerospace company revolutionizing
+                        space travel with reusable rockets and ambitious projects like **Starship** and **Starlink**.
+                    </p>
+                </div>
+                <div>
+                    <h2 class="text-xl font-semibold mb-2">Company Valuation</h2>
+                    <canvas id="evaluationChart" class="w-full h-64"></canvas>
+                </div>
+            </div>
+
+            <!-- Two Pie Charts -->
+            <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <h2 class="text-xl font-semibold mb-2">Revenue Distribution</h2>
+                    <canvas id="revenueChart" class="w-full h-64"></canvas>
+                </div>
+                <div>
+                    <h2 class="text-xl font-semibold mb-2">Profit Sources</h2>
+                    <canvas id="profitChart" class="w-full h-64"></canvas>
+                </div>
+            </div>
+
+            <!-- Industry Ranking Section -->
+            <div class="mt-6">
+                <h2 class="text-xl font-semibold mb-2">Rocket Industry & Tech Rankings</h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full border-collapse border border-gray-300">
+                        <thead>
+                            <tr class="bg-gray-200">
+                                <th class="border border-gray-300 px-4 py-2">Rank</th>
+                                <th class="border border-gray-300 px-4 py-2">Company</th>
+                                <th class="border border-gray-300 px-4 py-2">Valuation ($B)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-yellow-300">
+                                <td class="border border-gray-300 px-4 py-2">1</td>
+                                <td class="border border-gray-300 px-4 py-2">SpaceX</td>
+                                <td class="border border-gray-300 px-4 py-2">137</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 px-4 py-2">2</td>
+                                <td class="border border-gray-300 px-4 py-2">Blue Origin</td>
+                                <td class="border border-gray-300 px-4 py-2">15</td>
+                            </tr>
+                            <tr class="bg-gray-100">
+                                <td class="border border-gray-300 px-4 py-2">3</td>
+                                <td class="border border-gray-300 px-4 py-2">Rocket Lab</td>
+                                <td class="border border-gray-300 px-4 py-2">5</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 px-4 py-2">4</td>
+                                <td class="border border-gray-300 px-4 py-2">Northrop Grumman</td>
+                                <td class="border border-gray-300 px-4 py-2">40</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Meet the Team -->
+            <div class="mt-6">
+                <h2 class="text-xl font-semibold mb-2">Meet the Leadership</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="text-center">
+                        <img src="https://www.nme.com/wp-content/uploads/2025/01/Elon-Musk-20251.jpg"
+                            class="w-20 h-20 rounded-full mx-auto">
+                        <p class="font-semibold mt-2">Elon Musk</p>
+                        <p class="text-gray-500 text-sm">Founder & CEO</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="https://up.yimg.com/ib/th?id=OIP.PZaM2TzeWG3wTRBI37kmBAHaHr&pid=Api&rs=1&c=1&qlt=95&w=99&h=103"
+                            class="w-20 h-20 rounded-full mx-auto">
+                        <p class="font-semibold mt-2">Gwynne Shotwell</p>
+                        <p class="text-gray-500 text-sm">President & COO</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="https://up.yimg.com/ib/th?id=OIP.PZaM2TzeWG3wTRBI37kmBAHaHr&pid=Api&rs=1&c=1&qlt=95&w=99&h=103"
+                            class="w-20 h-20 rounded-full mx-auto">
+                        <p class="font-semibold mt-2">Tom Mueller</p>
+                        <p class="text-gray-500 text-sm">VP of Propulsion</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Charts -->
+    <!-- JavaScript for Charts -->
+    <script>
+        new Chart(document.getElementById('evaluationChart').getContext('2d'), {
+            type: 'line',
+            data: {
+                labels: ['2018', '2019', '2020', '2021', '2022', '2023'],
+                datasets: [{
+                    label: 'Company Valuation ($B)',
+                    data: [27, 33, 46, 74, 100, 137],
+                    borderColor: '#4BC0C0',
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    fill: true,
+                    tension: 0.4
+                }]
+            },
+            options: { responsive: true }
+        });
+
+        new Chart(document.getElementById('revenueChart').getContext('2d'), {
+            type: 'pie',
+            data: {
+                labels: ['Starship', 'Starlink', 'NASA Contracts', 'Other'],
+                datasets: [{
+                    data: [40, 30, 20, 10],
+                    backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#9966FF']
+                }]
+            },
+            options: { responsive: true }
+        });
+
+        new Chart(document.getElementById('profitChart').getContext('2d'), {
+            type: 'pie',
+            data: {
+                labels: ['Reinvestment', 'R&D', 'Operational Costs', 'Profit'],
+                datasets: [{
+                    data: [50, 30, 15, 5],
+                    backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0']
+                }]
+            },
+            options: { responsive: true }
+        });
+    </script>
+</body>
+
+</html>
